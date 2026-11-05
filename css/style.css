@@ -1,0 +1,190 @@
+/* 
+colors
+Smooth Pebles - #C9BBB0
+Pink shade - #CB7182
+Saratoga - #535C2B
+Downtown Benny Brown - #7E6959
+Cola Bubble - #3F3124
+ */
+
+body{
+    border-left: 33px solid #7E6959;
+    border-right: 33px solid #7E6959;
+    border-bottom: 33px solid #7E6959;
+    margin: 0;
+    background-color: #C9BBB0;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #3F3124;
+}
+ /* line 19 ChatGPT Nov 3rd, 2026 */
+.review-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 120px;
+    /* lines 23-24 ChatGPT Nov 3rd, 2026 */
+    align-items: start;
+    padding: 60px;
+}
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.homemade-apple-regular {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+#review-nav > a{
+    font-family: "Homemade Apple", cursive;
+    font-size: 18px;
+    color: #C9BBB0;
+}
+
+#page-nav > a{
+    font-family: "Homemade Apple", cursive;
+    font-size: 18px;
+    color: #3F3124;
+}
+
+.brown-cream-p > a{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #C9BBB0; 
+}
+
+.green-cream-p > a{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #535C2B; 
+}
+
+h1{
+    font-family: "Homemade Apple", cursive;
+    font-size: 56px;
+    color: #C9BBB0;
+}
+header {   
+    display: grid;
+    grid-template-columns: 1fr, 3fr, 1fr;
+    grid-template-areas: 
+        "pn t rn";
+    background-color: #7E6959;
+    /* line 75 added by ChatGPT to get blog and review nav containers aligned with title column Nov 3rd, 2026 */
+    align-items: center; 
+    text-align: center;
+}
+#page-nav-container{
+    grid-area: pn;
+    text-align: left;
+    padding: 20px 0px 20px 20px;
+}
+
+#title{
+    grid-area: t;
+    text-align: center;
+    padding: 20px 0px 20px 20px;
+}
+
+#review-nav-container{
+    grid-area: rn;
+    text-align: right;
+    padding: 20px;
+}
+.green-cream{
+    background-color: #C9BBB0;
+}
+
+.green-cream-h{
+    font-family: "Homemade Apple", cursive;
+    font-size: 36px;
+    color: #535C2B;
+}
+
+.green-cream-p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #535C2B;
+}
+
+.green-cream-ul{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #535C2B; 
+}
+
+.brown-cream{
+    background-color: #3F3124;
+}
+
+.brown-cream-h{
+    font-family: "Homemade Apple", cursive;
+    font-size: 36px;
+    color: #C9BBB0;
+}
+
+.brown-cream-p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #C9BBB0; 
+}
+.brown-cream-ul{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #C9BBB0; 
+}
+
+#about{
+    background-color: #C9BBB0;
+}
+#about-p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #3F3124;
+}
+
+#about-h{
+    font-family: "Homemade Apple", cursive;
+    font-size: 36px;
+    color: #3F3124;
+}
+
+footer{
+    background-color: #535C2B;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Lines 136-159 by ChatGPT to help with alternating column layout Nov 3rd, 2026 */
+.review-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Komeya and Q: images on left, text on right */
+
+#komeya-review .review-image,
+#q-review .review-image {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#komeya-review .review-text,
+#q-review .review-text {
+    grid-column: 2;
+    grid-row: 1;
+}
