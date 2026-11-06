@@ -1,12 +1,11 @@
 /* 
-colors
-Smooth Pebles - #C9BBB0
-Pink shade - #CB7182
-Saratoga - #535C2B
-Downtown Benny Brown - #7E6959
-Cola Bubble - #3F3124
+COLOR PALETTE
+    Smooth Pebles - #C9BBB0
+    Pink shade - #CB7182
+    Saratoga - #535C2B
+    Downtown Benny Brown - #7E6959
+    Cola Bubble - #3F3124
  */
-
 
 main{
     border-left: 33px solid #7E6959;
@@ -24,6 +23,7 @@ p{
     font-size: 20px;
     color: #3F3124;
 }
+
  /* review grid-{ and padding top and bottom lines added by ChatGPT Nov 3rd, 2026 */
 .review-grid{
     display: grid;
@@ -33,12 +33,12 @@ p{
     padding-bottom: 96px;
 
 }
+
 .inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-
 
 .homemade-apple-regular {
     font-family: "Homemade Apple", cursive;
@@ -59,7 +59,6 @@ p{
     color: #3F3124;
     background-color: #C9BBB0;
     border: 3px solid #3F3124;
-
     /* The following lines were taken from ChatGPT to help make a CSS oval Nov 5th, 2026 */
     border-radius: 50%;
     padding: 7px 64px;
