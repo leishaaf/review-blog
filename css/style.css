@@ -7,27 +7,31 @@ Downtown Benny Brown - #7E6959
 Cola Bubble - #3F3124
  */
 
-body{
+
+main{
     border-left: 33px solid #7E6959;
     border-right: 33px solid #7E6959;
     border-bottom: 33px solid #7E6959;
+}
+
+body{
     margin: 0;
-    background-color: #C9BBB0;
 }
 
 p{
     font-family: "Inter", sans-serif;
+    font-weight: 300;
     font-size: 20px;
     color: #3F3124;
 }
- /* line 19 ChatGPT Nov 3rd, 2026 */
+ /* review grid-{ and padding top and bottom lines added by ChatGPT Nov 3rd, 2026 */
 .review-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 120px;
-    /* lines 23-24 ChatGPT Nov 3rd, 2026 */
-    align-items: start;
-    padding: 60px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    padding-top: 112px;
+    padding-bottom: 96px;
+
 }
 .inter-regular {
     font-family: "Inter", sans-serif;
@@ -35,21 +39,15 @@ p{
     font-style: normal;
 }
 
-.inter-bold {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-}
-
 .homemade-apple-regular {
     font-family: "Homemade Apple", cursive;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
 }
   
 #review-nav > a{
     font-family: "Homemade Apple", cursive;
+    font-weight:normal;
     font-size: 18px;
     color: #C9BBB0;
 }
@@ -58,6 +56,15 @@ p{
     font-family: "Homemade Apple", cursive;
     font-size: 18px;
     color: #3F3124;
+    background-color: #C9BBB0;
+    border: 3px solid #3F3124;
+
+    /* The following lines were taken from ChatGPT to help make a CSS oval Nov 5th, 2026 */
+    border-radius: 50%;
+    padding: 7px 64px;
+    display: inline-block;
+    text-decoration: none;
+
 }
 
 .brown-cream-p > a{
@@ -75,22 +82,51 @@ p{
 h1{
     font-family: "Homemade Apple", cursive;
     font-size: 56px;
+    font-weight: normal;
     color: #C9BBB0;
 }
+
 header {   
     display: grid;
     grid-template-columns: 1fr, 3fr, 1fr;
     grid-template-areas: 
-        "pn t rn";
+        "cr cr cr"
+        "pn t rn"
+        "sr sr sr";
     background-color: #7E6959;
-    /* line 75 added by ChatGPT to get blog and review nav containers aligned with title column Nov 3rd, 2026 */
+    /* align-items and text-align added by ChatGPT to get blog and review nav containers aligned with title column Nov 3rd, 2026 */
     align-items: center; 
     text-align: center;
+    margin-bottom:0;
 }
+
+intro{
+    margin-top: 0;
+}
+
+.circular-roof{
+    grid-area: cr;
+    text-align: center;
+}
+
+.striped-roof{
+    grid-area: sr;
+    text-align: center;
+    /* Line below added by chatgpt to get rid of the line between my png and intro secion Nov 5th, 2026 */
+    margin-bottom: -3px;
+}
+
+  /* block below added by chatgpt to get rid of the line between my png and intro secion Nov 5th, 2026 */
+.striped-roof img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 #page-nav-container{
     grid-area: pn;
     text-align: left;
-    padding: 20px 0px 20px 20px;
+    padding-left: 88px;
 }
 
 #title{
@@ -102,7 +138,7 @@ header {
 #review-nav-container{
     grid-area: rn;
     text-align: right;
-    padding: 20px;
+    padding-right: 88px;
 }
 .green-cream{
     background-color: #C9BBB0;
@@ -110,6 +146,7 @@ header {
 
 .green-cream-h{
     font-family: "Homemade Apple", cursive;
+    font-weight: normal;
     font-size: 36px;
     color: #535C2B;
 }
@@ -123,6 +160,7 @@ header {
 .green-cream-ul{
     font-family: "Inter", sans-serif;
     font-size: 20px;
+    font-weight: 300;
     color: #535C2B; 
 }
 
@@ -132,6 +170,7 @@ header {
 
 .brown-cream-h{
     font-family: "Homemade Apple", cursive;
+    font-weight: normal;
     font-size: 36px;
     color: #C9BBB0;
 }
@@ -141,25 +180,23 @@ header {
     font-size: 20px;
     color: #C9BBB0; 
 }
+
 .brown-cream-ul{
     font-family: "Inter", sans-serif;
     font-size: 20px;
+    font-weight: 300;
     color: #C9BBB0; 
 }
 
 #about{
     background-color: #C9BBB0;
 }
-#about-p{
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    color: #3F3124;
-}
 
 #about-h{
     font-family: "Homemade Apple", cursive;
+    font-weight: normal;
     font-size: 36px;
-    color: #3F3124;
+    color: #535C2B;
 }
 
 footer{
@@ -168,23 +205,58 @@ footer{
     padding: 40px 20px;
 }
 
-/* Lines 136-159 by ChatGPT to help with alternating column layout Nov 3rd, 2026 */
-.review-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+#intro #intro-title{
+    grid-column: 2/6;
 }
 
-/* Komeya and Q: images on left, text on right */
-
-#komeya-review .review-image,
-#q-review .review-image {
-    grid-column: 1;
-    grid-row: 1;
+#intro #intro-text{
+    grid-column: 6/12;
 }
 
-#komeya-review .review-text,
-#q-review .review-text {
-    grid-column: 2;
-    grid-row: 1;
+#komeya-review .review-image{
+    grid-column: 2/5;
+}
+
+#komeya-review .review-text{
+    grid-column: 6/12;
+}
+
+#tadaima-review .review-text{
+    grid-column: 2/7;
+    padding-top: 0;
+}
+
+#tadaima-review .review-image{
+    grid-column: 8/11;
+    padding-top: 0;
+}
+
+#q-review .review-image{
+    grid-column: 2/5;
+}
+
+#q-review .review-text{
+    grid-column: 6/12;
+}
+
+#about #about-text{
+    grid-column: 2/6;
+}
+
+#about #about-img{
+    grid-column: 7/12;
+}
+
+.brown-cream-h3{
+    font-family: "Homemade Apple", cursive;
+    font-weight: normal;
+    font-size: 24px;
+    color: #C9BBB0;
+}
+
+.green-cream-h3{
+    font-family: "Homemade Apple", cursive;
+    font-weight: normal;
+    font-size: 24px;
+    color: #535C2B;
 }
