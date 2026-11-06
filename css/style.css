@@ -39,15 +39,16 @@ p{
     font-style: normal;
 }
 
+
 .homemade-apple-regular {
     font-family: "Homemade Apple", cursive;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
 }
   
 #review-nav > a{
     font-family: "Homemade Apple", cursive;
-    font-weight:normal;
+    font-weight: 100;
     font-size: 18px;
     color: #C9BBB0;
 }
