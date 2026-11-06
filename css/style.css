@@ -126,7 +126,7 @@ intro{
 #page-nav-container{
     grid-area: pn;
     text-align: left;
-    padding-left: 88px;
+    padding-left: 64px;
 }
 
 #title{
@@ -138,7 +138,7 @@ intro{
 #review-nav-container{
     grid-area: rn;
     text-align: right;
-    padding-right: 88px;
+    padding-right: 64px;
 }
 .green-cream{
     background-color: #C9BBB0;
